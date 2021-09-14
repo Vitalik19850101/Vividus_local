@@ -34,7 +34,7 @@ When I enter `#{generate(Internet.emailAddress)}` in field located `By.xpath(*//
 When I enter `QWErfv123` in field located `By.xpath(*//input[@id='ap_password'])`
 When I enter `QWErfv123` in field located `By.xpath(//*[@id='ap_password_check'])`
 When I click on element located `By.xpath(//input[@id='continue'])`
-When I enter `441431` in field located `By.xpath(//*[@id='cvf-input-code'])
+When I enter `441431` in field located `By.xpath(//*[@id='cvf-input-code'])`
 Then the page with the URL 'https://www.imdb.com/?ref_=nv_home' is loaded
 When I enter `How I Met You Mother` in field located `By.xpath(//input[@aria-label='Search IMDb'])`
 When I click on element located `By.xpath(//button[@id='suggestion-search-button'])`
@@ -48,6 +48,7 @@ Scenario: Create new account reddit.com
 Given I am on a page with the URL 'https://www.reddit.com/'
 When I reset context
 When I click on element located `By.xpath(*//a[text()='Sign Up'])`
+When I change context to element located `By.xpath(//input[@name='email')`
 When I enter `vi31231ta@gammd.com` in field located `By.xpath(//input[@name='email')`
 When I enter `#{generate(User.name)}` in field located `By.xpath(//input[@id='regUsername')`
 When I enter `#{generate(Internet.password)}` in field located `By.xpath(//input[@id='regPassword')`
