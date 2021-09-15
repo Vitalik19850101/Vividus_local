@@ -6,7 +6,7 @@ Examples:
 /tables/URL.table
 
 Scenario: Create new account
-Given I am on a page with the URL '${URL_walmart}'
+Given I am on a page with the URL '<URL_walmart>'
 When I reset context
 When I click on element located `By.xpath(//button[@id='hf-account-flyout'])`
 When I click on element located `By.xpath(//div[@id='vh-account-menu-root']//a[@title='Sign In'])`
@@ -20,7 +20,7 @@ When I click on element located `By.xpath(//*[@id="sign-up-form"]/button[1])`
 Then the page with the URL 'https://https://www.walmart.com/account/signup?tid=0&returnUrl=/' is loaded
 
 Scenario: Add to cart
-Given I am on the main application page
+Given I am on a page with the URL '<URL_walmart>'
 When I reset context
 When I enter `car` in field located `By.xpath(//input[@id='global-search-input'])`
 When I click on element located `By.xpath(//[@id='global-search-submit'])`

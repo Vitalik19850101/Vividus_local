@@ -6,7 +6,7 @@ Examples:
 /tables/URL.table
 
 Scenario: Create new account imbd.com
-Given I am on a page with the URL '${URL_imdb}'
+Given I am on a page with the URL '<URL_imdb>'
 When I reset context
 When I click on element located `By.xpath(*//div[text()='Sign In'])`
 When I click on element located `By.xpath(*//a[text()='Create a New Account'])`
