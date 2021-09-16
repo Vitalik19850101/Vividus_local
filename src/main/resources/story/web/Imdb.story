@@ -1,12 +1,11 @@
-Description: Create new account imbd.com
-
-Scenario: Create new account imbd.com
 Meta:
     ID_1
 
 Lifecycle:
 Examples:
 /tables/URL.table
+
+Scenario: Create new account imbd.com
 Given I am on a page with the URL '<URL_imdb>'
 When I reset context
 When I click on element located `By.xpath(//div[text()='Sign In'])`
