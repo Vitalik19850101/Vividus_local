@@ -21,5 +21,5 @@ When I click on element located `By.xpath((//div[text()='Watchlist'])[1])`
 When I click on element located `By.xpath(//div[text()='Watchlist'])`
 When I click on element located `By.xpath(//a[text()='Export this list'])`
 Examples:
-|search		|email					 |password	 |								
+|search		|email					 |password	 |
 |Orphan		|vumirgorodskiy@gmail.com|Vitalik=-44|

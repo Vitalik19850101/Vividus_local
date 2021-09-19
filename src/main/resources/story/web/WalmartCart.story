@@ -14,4 +14,3 @@ When I change context to element located `By.xpath((//a[contains(@class, 'absolu
 When I click on element located `By.xpath((//a[contains(@class,'absolute')])[1])`
 When I click on element located `By.xpath(//span[text()='Add to cart'])`
 When I click on element located `By.xpath(//a[@id='hf-cart'])`
-Then the page with the URL 'https://www.walmart.com/cart' is loaded

@@ -17,5 +17,5 @@ When I enter `<passwordReCheck>` in field located `By.xpath(//input[@id='ap_pass
 When I enter `<passwordReCheck>` in field located `By.xpath(//input[@name='passwordCheck'])`
 When I click on element located `By.xpath(//input[@id='continue'])`
 Examples:
-|passwordReCheck							|firstName						|email								|
-|#{generate(regexify'[A-Za-z0-9]{12}')}		|#{generate(Name.firstname)}	|#{generate(Internet.emailAddress)}	|
+|passwordReCheck						|firstName					|email								|
+|#{generate(regexify'[A-Za-z0-9]{12}')}	|#{generate(Name.firstname)}|#{generate(Internet.emailAddress)}	|
