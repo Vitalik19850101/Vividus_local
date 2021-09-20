@@ -6,7 +6,7 @@ Examples:
 /tables/URL.table
 
 Scenario: Add to cart
-Given I am on a page with the URL '<urlwalmart>'
+Given I am on a page with the URL '<urlWalmart>'
 When I reset context
 When I enter `car` in field located `By.xpath(//input[@placeholder='Search everything at Walmart online and in store'])`
 When I click on element located `By.xpath(//button[@aria-label='Search icon'])`

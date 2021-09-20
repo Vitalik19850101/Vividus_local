@@ -6,7 +6,7 @@ Examples:
 /tables/URL.table
 
 Scenario: Add to watchlist
-Given I am on a page with the URL '<urlimdb>'
+Given I am on a page with the URL '<urlImdb>'
 When I reset context
 When I click on element located `By.xpath(//div[text()='Sign In'])`
 When I click on all elements located `By.xpath(//span[text()='Sign in with IMDb'])`
