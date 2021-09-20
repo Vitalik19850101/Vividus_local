@@ -11,12 +11,12 @@ When I reset context
 When I click on element located `By.xpath(//a[text()='Sign Up'])`
 When I refresh the page
 When I click on element located `By.xpath(//a[text()='Sign Up'])`
-When I switch to frame located `By.xpath(//iframe[contains(@src, 'actionSource=header_signup')])`
+When I switch to frame located `By.xpath(//iframe[contains(@src,'actionSource=header_signup')])`
 When I change context to element located `By.xpath(//input[@name='email'])`
 When I enter `<email>` in field located `By.xpath(//input[@name='email'])`
 When I click on element located `By.xpath(//button[text()='Continue'])`
 When I switch back to the page
-When I switch to frame located `By.xpath(//iframe[contains(@src, 'actionSource=header_signup')])`
+When I switch to frame located `By.xpath(//iframe[contains(@src,'actionSource=header_signup')])`
 When I change context to element located `By.xpath(//input[@placeholder='Choose a Username'])`
 When I enter `<firstName>` in field located `By.xpath(//input[@placeholder='Choose a Username'])`
 When I enter `<password>` in field located `By.xpath(//input[@placeholder='Password'])`
