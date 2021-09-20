@@ -2,7 +2,6 @@
 .gradle
 
 #Ignore IDE project files
-overriding.properties
 .settings
 .project
 .classpath
@@ -16,3 +15,5 @@ overriding.properties
 output/
 .out/**
 /.metadata/
+
+overriding.properties
