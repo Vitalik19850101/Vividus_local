@@ -25,15 +25,15 @@ When I enter `<needItem>` in field located `By.xpath(//input[@placeholder='Searc
 When I click on element located `By.xpath(//input[@value='Search'])`
 Then field located `By.xpath(<exitElement>)` exists
 When I click on element located `By.xpath(//a[text()='For Professionals'])`
-When I switch to window with title that contains `By.xpath(<switchWindow>)`
+When I switch to a new window
 When I reset context
-When I click on element located `By.xpath(//a[text()='Sign In'])`
-When I switch to frame located `By.xpath(<iframe>)`
+When I click on element located `By.xpath(<signIn>)`
+When I wait until element located `By.xpath(//div[@id='janrainModal'])` appears
 When I enter `<email>` in field located `By.xpath(//input[@placeholder='Email Address'])`
 When I enter `<password>` in field located `By.xpath(//input[@placeholder='Password'])`
 When I take screenshot
 When I click on element located `By.xpath(<singUp>)`
 
 Examples:
-|exitElement																			   |iframe																		                |switchWindow										  |singUp														|password							   |email							  |faq				      |item								   |url																		     |needItem								     |
-|//a[contains(.,'Mint Chewable Tablets')]/ancestor::div[@class='results-content-container']|//iframe[contains(@div,'janrainModalOverlay')]/ancestor::div[@class,'modal-hide scrollable']|//title[contains(text(),'Professional For Dentists')]|//button[@id='capture_signIn_traditionalSignIn_createButton']|#{generate(regexify'[A-Za-z0-9]{12}')}|#{generate(Internet.emailAddress)}|(//a[text()='FAQ'])[11]|(//a[contains(@rel,'bookmark')])[3] |https://www.listerine.com/mouthwash/antiseptic/listerine-freshburst-mouthwash|LISTERINE READY! TABS Mint Chewable Tablets|
+|signIn																		|exitElement																			   |switchWindow										  |singUp														|password							   |email							  |faq				      |item								  |url																		    |needItem								    |
+|//div[@id='block-janrain-janrain-user-menu']//a[contains(text(),'Sign In')]|//a[contains(.,'Mint Chewable Tablets')]/ancestor::div[@class='results-content-container']|//title[contains(text(),'Professional For Dentists')]|//button[@id='capture_signIn_traditionalSignIn_createButton']|#{generate(regexify'[A-Za-z0-9]{12}')}|#{generate(Internet.emailAddress)}|(//a[text()='FAQ'])[11]|(//a[contains(@rel,'bookmark')])[3] |https://www.listerine.com/mouthwash/antiseptic/listerine-freshburst-mouthwash|LISTERINE READY! TABS Mint Chewable Tablets|
