@@ -14,3 +14,16 @@
 #Build Dirs#
 output/
 .out/**
+/.metadata/
+
+
+
+
+
+
+
+
+
+
+
+overriding.properties
